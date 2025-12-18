@@ -16,8 +16,12 @@ justify-content: end;
   @media (min-width: 360px) {
     width: 18rem;
   }
+
+  @media (min-width: 430px) {
+    width: 21rem;
+  }
     
-  @media (min-width: 600px) { //desktop
+  @media (min-width: 800px) { //desktop
     margin-left: 35rem;
     width: 30rem;
   }
@@ -38,28 +42,62 @@ height: 100vh; //revisar
 
   @media (min-width: 600px) { //desktop
     flex-direction: row; 
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
     text-align: start;
-    gap: 36rem;
     margin: 0rem;
   }
 
-  h1{
-    font-size: 2.2rem;
-    color:  ${({ theme }) => theme.green};
-    font-family: "Libre Baskerville", serif;
 
-    @media (min-width: 600px) { //desktop
-      font-size: 5rem;
-    }
+.jump span {
+  display: inline-block;
+  animation: jump 2.7s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+  font-size: 2.2rem;
+  color:  ${({ theme }) => theme.green};
+  font-family: 'Cabin Sketch', cursive;
+
+  @media (min-width: 430px) {
+    font-size: 3.3rem;
   }
   
+  @media (min-width: 600px) {
+    font-size: 6rem;
+    line-height: 4rem;
+  }
+}
+
+/* espaço entre palavras */
+.jump .space {
+  animation: none;
+  width: 0.2ch;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* ♿ acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  .jump span {
+    animation: none;
+  }
+}
+
   span{
     color:  ${({ theme }) => theme.green};
     font-size: 0.8rem;
 
     @media (min-width: 600px) { //desktop
       font-size: 1.3rem;
+      padding-left: 0.3rem ;
     } 
   }
 
@@ -71,6 +109,7 @@ height: 100vh; //revisar
     @media (min-width: 600px) { //desktop
       font-size: 1.1rem;
       max-width: 35rem;
+      padding-left: 0.3rem ;
     } 
   }
 
@@ -134,6 +173,7 @@ img{
 
     @media (min-width: 600px) { //desktop
       flex-direction: column;
+       gap: 2rem;
     }
 
     a{
@@ -155,7 +195,112 @@ img{
 }
 `;
 
+export const GradientEffect = styled.div`
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    z-index: 2;
+
+    background: linear-gradient(
+      transparent 0%,
+      rgba(255,255,255,1) 50%,
+      transparent 100%
+    );
+  }
+
+`;
+
 export const Main = styled.main`
-background-color: red;
+background-color: #fff;
 margin: 0;
+width: 100%;
+height: 100vh;
+`;
+
+export const AboutContainer = styled.div`
+width: 100%;
+min-height: 100vh;
+height: auto;
+`;
+
+export const AboutContent = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center ;
+text-align: center;
+margin: 0.5rem;
+padding: 1rem;
+
+  @media (min-width: 600px) { //desktop
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+p{
+  @media (min-width: 600px) { //desktop
+     max-width: 50%;
+  }
+}
+
+.aboutImage{
+  width: 20rem;
+  margin: 2rem;
+  border-radius: 1rem;
+
+  @media (min-width: 600px) { //desktop
+     width: 40rem;
+  }
+}
+`;
+
+export const LearnContainer = styled.div`
+width: 100%;
+min-height: 100vh;
+height: auto;
+`;
+
+export const LearnContent = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center ;
+text-align: center;
+margin: 0.5rem;
+padding: 1rem;
+
+  @media (min-width: 600px) { //desktop
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  p{
+  @media (min-width: 600px) { //desktop
+     max-width: 50%;
+  }
+
+  .imageCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem 6rem;
+    overflow-x: auto;
+    scroll-behavior: auto;
+
+    &::-webkit-scrollbar { //Container
+    display: none;
+    };
+
+    img{
+    }
+    
+  }
+}
 `;
