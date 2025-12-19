@@ -10,15 +10,11 @@ import person from "../../assets/person.png"
 import about from "../../assets/about.png"
 import { Title } from "../../components";
 
-import { carouselFunction } from "../../utils/carouselFunction";
-import { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode } from "swiper/modules";
+import "swiper/css";
 
 export function Home() {
-
-    useEffect(() => {
-        //Utils Init
-        carouselFunction();
-    }, []);
 
     const text = "Nubia Carraro";
 
@@ -72,28 +68,54 @@ export function Home() {
             <Main>
                 <AboutContainer>
                     <AboutContent>
-                        <Title icon={<i className="ri-plant-fill"></i>}>
+                        <Title>
                             Sobre mim
                         </Title>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae. Vitae facilis veritatis fugiat pariatur, distinctio qui commodi architecto, dolorem voluptatem delectus eius. Beatae excepturi aliquam iste vero voluptatem possimus! <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint doloremque dicta sapiente deleniti praesentium quis provident consequuntur beatae illum expedita vero rem illo, animi magni soluta et exercitationem ad!</p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint doloremque dicta sapiente deleniti praesentium quis provident consequuntur beatae illum expedita vero rem illo, animi magni soluta et exercitationem ad!</p>
                         <img src={about} className="aboutImage" alt="Mulher segurando criança" />
                     </AboutContent>
                 </AboutContainer>
                 <LearnContainer>
                     <LearnContent>
-                        <Title icon={<i class="ri-puzzle-2-fill"></i>}>
+                        <Title>
                             Aprendizado
                         </Title>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae. Vitae facilis veritatis fugiat pariatur, distinctio qui commodi architecto, dolorem voluptatem delectus eius. Beatae excepturi aliquam iste vero voluptatem possimus! <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint doloremque dicta sapiente deleniti praesentium quis provident consequuntur beatae illum expedita vero rem illo, animi magni soluta et exercitationem ad!</p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint doloremque dicta sapiente deleniti praesentium quis provident consequuntur beatae illum expedita vero rem illo, animi magni soluta et exercitationem ad!</p>
 
-                        <article className="imageCarousel" id="photos">
-                            {images.map(data => (
-                                <img src={data.src} width="200px" alt="Atividades" />
-                            ))
-                            }
-                        </article>
+                        <Swiper
+                        onSwiper={(swiper) => swiper.autoplay.start()}
+                            modules={[Autoplay, FreeMode]}
+                            slidesPerView="auto"
+                            spaceBetween={24}
+                            loop={true}
+                            speed={6000}
+                            autoplay={{
+                                delay: 0,
+                                disableOnInteraction: false,
+                            }}
+                            freeMode={true}
+                            freeModeMomentum={false}
+                            grabCursor={false}
+                        >
+                            {images.map((img, index) => (
+                                <SwiperSlide
+                                    key={index}
+                                    style={{ width: "260px" }} // largura fixa das imagens
+                                >
+                                    <img
+                                        src={img.src}
+                                        alt="Atividade"
+                                        style={{
+                                            width: "100%",
+                                            borderRadius: "8px",
+                                            display: "block",
+                                        }}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
 
                     </LearnContent>
                 </LearnContainer>

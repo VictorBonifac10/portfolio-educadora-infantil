@@ -221,6 +221,37 @@ background-color: #fff;
 margin: 0;
 width: 100%;
 height: 100vh;
+
+ #animatedSection { //Animeted Section
+    display: flex;
+    justify-content: center;
+    background-color: ${({ theme }) => theme.primaryColorTranslucent}; 
+    padding: 1.2rem; 
+    margin: 0;
+    border: 0;
+    };
+
+    #animatedText { //Animeted Section
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: auto;
+    gap: 2rem;
+    max-width: 100%;
+
+    &::-webkit-scrollbar { //Animeted Section
+    display: none;
+    };
+    };
+
+    .textCustom { //Animeted Section
+    padding: 0;
+    margin: 0;
+    font-size: 6rem;
+    font-family: "Jersey 10", sans-serif;
+    color: ${({ theme }) => theme.primaryColor};
+    };
 `;
 
 export const AboutContainer = styled.div`
@@ -267,40 +298,30 @@ height: auto;
 `;
 
 export const LearnContent = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center ;
-text-align: center;
-margin: 0.5rem;
-padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  overflow: hidden;
 
-  @media (min-width: 600px) { //desktop
+  @media (min-width: 600px) {
     margin: 2rem;
-    padding: 1rem;
   }
 
-  p{
-  @media (min-width: 600px) { //desktop
-     max-width: 50%;
+  .swiper {
+    width: 100%;
   }
 
-  .imageCarousel{
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+
+  .swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    padding: 3rem 6rem;
-    overflow-x: auto;
-    scroll-behavior: auto;
-
-    &::-webkit-scrollbar { //Container
-    display: none;
-    };
-
-    img{
-    }
-    
   }
-}
 `;
