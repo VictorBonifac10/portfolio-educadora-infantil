@@ -3,7 +3,7 @@ import { LinkButton } from "../../components/LinkButton";
 import { contact } from "../../data/contact";
 import { images } from "../../data/images";
 
-import { TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent, PhraseContainer, Container } from "./styles"
+import {Body, TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent, PhraseContainer, Container } from "./styles"
 
 import banner from "../../assets/banner.jpg"
 import person from "../../assets/person.png"
@@ -19,7 +19,7 @@ export function Home() {
     const text = "Nubia Carraro";
 
     return (
-        <>
+        <Body>
             <Header />
             <TopContainer>
                 <img id="person" src={person} alt="Educadora Infantil" />
@@ -142,6 +142,6 @@ export function Home() {
                 */}
             </Main>
             <Footer />
-        </>
+        </Body>
     )
 }

@@ -1,6 +1,19 @@
 import { styled } from 'styled-components'
 import bgImage from '../../assets/background.jpg'
 
+export const Body = styled.body`
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url(${bgImage});
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
+
 export const TopContainer = styled.div`
 width: 100%;
 height: 100vh; //revisar
@@ -24,7 +37,7 @@ justify-content: end;
     
   @media (min-width: 800px) { //desktop
     margin-left: 35rem;
-    width: 30rem;
+    width: 26rem;
   }
 }
 `;
@@ -219,17 +232,6 @@ export const GradientEffect = styled.div`
 export const Main = styled.main`
   min-height: 100vh;
   width: 100%;
-
-  background:
-    linear-gradient(
-      rgba(255, 255, 255, 0.95),
-      rgba(255, 255, 255, 0.95)
-    ),
-    url(${bgImage});
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 `;
 
 export const AboutContainer = styled.div`
@@ -319,7 +321,7 @@ color:  ${({ theme }) => theme.white};
 font-style: italic;
 padding: 3rem;
 position: relative;
-margin: 4.5rem 0rem;
+margin: 2.5rem 0rem;
 
 div{
   width: 40px;
