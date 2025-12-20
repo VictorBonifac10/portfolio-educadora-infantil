@@ -3,12 +3,12 @@ import { LinkButton } from "../../components/LinkButton";
 import { contact } from "../../data/contact";
 import { images } from "../../data/images";
 
-import { TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent } from "./styles"
+import { TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent, PhraseContainer } from "./styles"
 
 import banner from "../../assets/banner.jpg"
 import person from "../../assets/person.png"
 import about from "../../assets/about.png"
-import { Title } from "../../components";
+import { Cards, Footer, Title } from "../../components";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
@@ -68,7 +68,7 @@ export function Home() {
             <Main>
                 <AboutContainer>
                     <AboutContent>
-                        <Title>
+                        <Title icon={<i className="ri-plant-fill"></i>}>
                             Sobre mim
                         </Title>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae. Vitae facilis veritatis fugiat pariatur, distinctio qui commodi architecto, dolorem voluptatem delectus eius. Beatae excepturi aliquam iste vero voluptatem possimus! <br />
@@ -76,16 +76,20 @@ export function Home() {
                         <img src={about} className="aboutImage" alt="Mulher segurando criança" />
                     </AboutContent>
                 </AboutContainer>
+                <Title icon={<i className="ri-plant-fill"></i>}>
+                    Atividades
+                </Title>
+                <Cards />
                 <LearnContainer>
                     <LearnContent>
-                        <Title>
+                        <Title icon={<i className="ri-plant-fill"></i>}>
                             Aprendizado
                         </Title>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae. Vitae facilis veritatis fugiat pariatur, distinctio qui commodi architecto, dolorem voluptatem delectus eius. Beatae excepturi aliquam iste vero voluptatem possimus! <br />
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint doloremque dicta sapiente deleniti praesentium quis provident consequuntur beatae illum expedita vero rem illo, animi magni soluta et exercitationem ad!</p>
 
                         <Swiper
-                        onSwiper={(swiper) => swiper.autoplay.start()}
+                            onSwiper={(swiper) => swiper.autoplay.start()}
                             modules={[Autoplay, FreeMode]}
                             slidesPerView="auto"
                             spaceBetween={24}
@@ -109,6 +113,7 @@ export function Home() {
                                         alt="Atividade"
                                         style={{
                                             width: "100%",
+                                            height: "190px",
                                             borderRadius: "8px",
                                             display: "block",
                                         }}
@@ -116,10 +121,17 @@ export function Home() {
                                 </SwiperSlide>
                             ))}
                         </Swiper>
-
                     </LearnContent>
                 </LearnContainer>
+                <PhraseContainer>
+                    <div>
+                        <i className="ri-globe-fill"></i>
+                    </div>
+                    <p>“A criança não é um vaso que se deve encher, mas uma fonte que deve ser deixada brotar.”</p>
+                    <h3>Maria Montessori (educadora)</h3>
+                </PhraseContainer>
             </Main>
+            <Footer />
         </>
     )
 }

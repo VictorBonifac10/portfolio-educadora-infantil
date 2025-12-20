@@ -1,3 +1,5 @@
 export * from './Header'
 export * from './LinkButton'
 export * from './Title'
+export * from './CardGrid'
+export * from './Footer'

@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import bgImage from '../../assets/background.jpg'
 
 export const TopContainer = styled.div`
 width: 100%;
@@ -213,45 +214,22 @@ export const GradientEffect = styled.div`
       transparent 100%
     );
   }
-
 `;
 
 export const Main = styled.main`
-background-color: #fff;
-margin: 0;
-width: 100%;
-height: 100vh;
+  min-height: 100vh;
+  width: 100%;
 
- #animatedSection { //Animeted Section
-    display: flex;
-    justify-content: center;
-    background-color: ${({ theme }) => theme.primaryColorTranslucent}; 
-    padding: 1.2rem; 
-    margin: 0;
-    border: 0;
-    };
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url(${bgImage});
 
-    #animatedText { //Animeted Section
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    white-space: nowrap;
-    scroll-behavior: auto;
-    gap: 2rem;
-    max-width: 100%;
-
-    &::-webkit-scrollbar { //Animeted Section
-    display: none;
-    };
-    };
-
-    .textCustom { //Animeted Section
-    padding: 0;
-    margin: 0;
-    font-size: 6rem;
-    font-family: "Jersey 10", sans-serif;
-    color: ${({ theme }) => theme.primaryColor};
-    };
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 export const AboutContainer = styled.div`
@@ -303,13 +281,13 @@ export const LearnContent = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0.5rem;
   padding: 1rem;
   width: 100%;
   overflow: hidden;
 
-  @media (min-width: 600px) {
-    margin: 2rem;
+  p{
+    max-width: 50%;
+    margin-bottom: 3rem;
   }
 
   .swiper {
@@ -325,3 +303,41 @@ export const LearnContent = styled.div`
     justify-content: center;
   }
 `;
+
+export const PhraseContainer = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:  ${({ theme }) => theme.green};
+color:  ${({ theme }) => theme.white};
+font-style: italic;
+padding: 3rem;
+position: relative;
+
+div{
+  width: 64px;
+  height: 64px;
+  background-color: ${({ theme }) => theme.green};;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 28px;
+    color: ${({ theme }) => theme.white};;
+  }
+}
+
+  h3{
+    font-size: 0.9rem;
+  }
+`
