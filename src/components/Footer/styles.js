@@ -11,6 +11,7 @@ export const ContainerFooter = styled.footer` //Footer
     width: 100%;
     padding: 0.5rem 2rem;
     margin-top: 40px;
+    
 
     img{ //Logo
     width: 250px;
