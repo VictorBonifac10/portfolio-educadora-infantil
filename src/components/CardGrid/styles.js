@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 4rem;
   padding: 2rem;
 
   @media (max-width: 1024px) {
@@ -52,6 +52,12 @@ export const IconWrapper = styled.div`
     font-size: 28px;
     color: #66c37a;
   }
+`;
+
+export const Title = styled.p`
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
 `;
 
 export const CardText = styled.p`

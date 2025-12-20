@@ -3,12 +3,12 @@ import { LinkButton } from "../../components/LinkButton";
 import { contact } from "../../data/contact";
 import { images } from "../../data/images";
 
-import { TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent, PhraseContainer } from "./styles"
+import { TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent, PhraseContainer, Container } from "./styles"
 
 import banner from "../../assets/banner.jpg"
 import person from "../../assets/person.png"
 import about from "../../assets/about.png"
-import { Cards, Footer, Title } from "../../components";
+import { Cards, Footer, Title, WorkTimeline, } from "../../components";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
@@ -68,25 +68,27 @@ export function Home() {
             <Main>
                 <AboutContainer>
                     <AboutContent>
-                        <Title icon={<i className="ri-plant-fill"></i>}>
+                        <Title icon={<i className="ri-user-fill"></i>}>
                             Sobre mim
                         </Title>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae. Vitae facilis veritatis fugiat pariatur, distinctio qui commodi architecto, dolorem voluptatem delectus eius. Beatae excepturi aliquam iste vero voluptatem possimus! <br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint doloremque dicta sapiente deleniti praesentium quis provident consequuntur beatae illum expedita vero rem illo, animi magni soluta et exercitationem ad!</p>
+                        <p>
+                            Olá, meu nome é Núbia Carraro, pedagoga em formação e cuidadora infantil.<br /><br />
+                            Com experiência no acompanhamento individualizado de crianças em ambientes escolares e familiares, trabalho com os pequenos de forma atenta e carinhosa, acreditando que o cuidado, o afeto e a escuta são fundamentais para o desenvolvimento de cada um deles.<br /><br />
+                            Tenho vivência como professora auxiliar e babá, desenvolvendo rotinas educativas, atividades lúdicas e estratégias que estimulam a autonomia, o aprendizado e o desenvolvimento social e emocional, valorizando a diversidade e o potencial único de cada criança.
+                        </p>
                         <img src={about} className="aboutImage" alt="Mulher segurando criança" />
                     </AboutContent>
                 </AboutContainer>
-                <Title icon={<i className="ri-plant-fill"></i>}>
-                    Atividades
+                <Title icon={<i class="ri-shapes-fill"></i>}>
+                    Aprendizado
                 </Title>
                 <Cards />
                 <LearnContainer>
                     <LearnContent>
-                        <Title icon={<i className="ri-plant-fill"></i>}>
-                            Aprendizado
+                        <Title icon={<i class="ri-star-smile-fill"></i>}>
+                            Atividades
                         </Title>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, molestiae. Vitae facilis veritatis fugiat pariatur, distinctio qui commodi architecto, dolorem voluptatem delectus eius. Beatae excepturi aliquam iste vero voluptatem possimus! <br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint doloremque dicta sapiente deleniti praesentium quis provident consequuntur beatae illum expedita vero rem illo, animi magni soluta et exercitationem ad!</p>
+                        <p>Abaixo estão alguns registros de atividades realizadas ao longo da rotina de trabalho, evidenciando propostas aplicadas em diferentes contextos e momentos. As imagens refletem práticas desenvolvidas com organização, intencionalidade e atenção às necessidades individuais, integrando cuidado, aprendizagem e convivência no cotidiano.</p>
 
                         <Swiper
                             onSwiper={(swiper) => swiper.autoplay.start()}
@@ -130,6 +132,14 @@ export function Home() {
                     <p>“A criança não é um vaso que se deve encher, mas uma fonte que deve ser deixada brotar.”</p>
                     <h3>Maria Montessori (educadora)</h3>
                 </PhraseContainer>
+                {/*
+                    <Container>
+                        <Title icon={<i className="ri-plant-fill"></i>}>
+                            Experiências
+                        </Title>
+                        <WorkTimeline />
+                    </Container>
+                */}
             </Main>
             <Footer />
         </>

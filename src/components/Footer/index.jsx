@@ -11,43 +11,40 @@ export function Footer() {
     return (
         <ContainerFooter>
             <Text>
-                Construindo aplicações modernas, performáticas e funcionais.
+                Educar é cuidar com presença, respeito e propósito.
             </Text>
             <ul>
                 <li>
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#about">Sobre</a>
+                    <a href="">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="#services">Habilidades</a>
+                    <a href="">Aprendizado</a>
                 </li>
                 <li>
-                    <a href="#technologies">Tecnologias</a>
+                    <a href="">Atividades</a>
                 </li>
                 <li>
-                    <a href="#portfolio">Projetos</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
+                    <a href="">Outros</a>
                 </li>
             </ul>
             {contact.map(data => (
                 <section>
-                    <a href={data.instagram} target="_blank">
+                    <a href={data.instagram} target="_blank" rel="noreferrer">
+                        <i className="ri-instagram-line"></i>
+                    </a>
+                    <a href={data.whatsapp} target="_blank" rel="noreferrer">
                         <i className="ri-whatsapp-line"></i>
                     </a>
-                    <a href={data.whatsapp} target="_blank">
-                        <i className="ri-google-line"></i>
-                    </a>
-                    <a href={data.forms} target="_blank">
-                        <i className="ri-github-line"></i>
+                    <a href={data.forms} target="_blank" rel="noreferrer">
+                        <i className="ri-information-line"></i>
                     </a>
                 </section>
             ))}
             <Text>
-                © 2025 Victor Bonifácio Portfólio. Todos os direitos reservados.
+                © 2025 Nubia Carraro • Todos os direitos reservados <br />Desenvolvido por Victor Bonifácio
             </Text>
             <svg
                 className="waves"

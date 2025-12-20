@@ -28,13 +28,13 @@ export const Item = styled(CNavItem)` //Navbar
     border-radius: 50px;
     margin: 0;
     padding: 8px 12px;
-    color: ${({ theme }) => theme.text};
+    color: gray;
     font-size: 15px;
     transition: 0.5s all;
 
     &:hover{ //Effect
     background-color: #fff;
-    color: ${({ theme }) => theme.primaryColor};
+    color: ${({ theme }) => theme.green};
     } 
     }
 `;
@@ -90,8 +90,8 @@ export const StyledNavLink = styled(CNavLink)` //Navbar
     color: ${({ theme }) => theme.green};
 
     &:hover{ //Effect
-    color: ${({ theme }) => theme.primaryColor};
-    border-bottom: 2px solid ${({ theme }) => theme.primaryColor};
+    color: ${({ theme }) => theme.green};
+    border-bottom: 2px solid ${({ theme }) => theme.green};
     }
 `;
 

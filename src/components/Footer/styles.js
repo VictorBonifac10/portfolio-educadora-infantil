@@ -9,7 +9,7 @@ export const ContainerFooter = styled.footer` //Footer
     align-items: center;
     text-align: center;
     width: 100%;
-    padding-bottom: 40px;
+    padding: 0.5rem 2rem;
     margin-top: 40px;
 
     img{ //Logo
@@ -28,12 +28,12 @@ export const ContainerFooter = styled.footer` //Footer
 
     li{ //Sections from Site 
     a{
+    color: ${({ theme }) => theme.green};
     text-decoration: none;
-    color: ${({ theme }) => theme.text};
 
     &:hover{ //Effect
-    color: ${({ theme }) => theme.primaryColor};;
-    border-bottom: 2px solid ${({ theme }) => theme.primaryColor};
+    color: ${({ theme }) => theme.green};
+    border-bottom: 2px solid ${({ theme }) => theme.green};
     }
     }
     }
@@ -45,14 +45,23 @@ export const ContainerFooter = styled.footer` //Footer
     align-items: center;
     gap: 20px;
 
+    a{
+          text-decoration: none;
+    }
+
     i{ //Icons
-    color: ${({ theme }) => theme.text};
+    color: white;
+    background-color: ${({ theme }) => theme.green};
+    padding: 0.5rem;
+    border-radius: 50px;
     font-size: 20px;
     transition: 0.5s;
     cursor: pointer;
+    transition: 1s all;
 
     &:hover{ //Effect
-    color: ${({ theme }) => theme.primaryColor};
+    color: ${({ theme }) => theme.green};;
+    background-color: white;
     }
     }
   }
@@ -69,7 +78,7 @@ export const ContainerFooter = styled.footer` //Footer
     max-height: 150px;
 
     use{ //Animated Waves
-    fill: ${({ theme }) => theme.primaryColorTranslucent};  
+    fill: rgba(102, 200, 130, 0.3);  
     }
 }
 
@@ -77,7 +86,6 @@ export const ContainerFooter = styled.footer` //Footer
     position: relative;
     height: 20vh;
     text-align: center;
-    background-color: white;
     }
 
     .parallax>use { //Animated Waves
@@ -125,6 +133,5 @@ export const ContainerFooter = styled.footer` //Footer
 `;
 
 export const Text = styled.div` //Atributtes
-    color: ${({ theme }) => theme.text};
     max-width: 500px;
 `;

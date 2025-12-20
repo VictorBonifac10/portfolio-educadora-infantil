@@ -43,28 +43,23 @@ export function Header() {
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="#about">
-                            Sobre
+                        <StyledNavLink href="">
+                            Sobre mim
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="#services">
-                            Habilidades
+                        <StyledNavLink href="">
+                            Aprendizado
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="#technologies">
-                            Tecnologias
+                        <StyledNavLink href="">
+                            Atividades
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="#portfolio">
-                            Projetos
-                        </StyledNavLink>
-                    </Item>
-                    <Item>
-                        <StyledNavLink href="#contact">
-                            Contato
+                        <StyledNavLink href="">
+                            Outros
                         </StyledNavLink>
                     </Item>
                     <Item>
@@ -100,28 +95,23 @@ export function Header() {
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="#about">
-                                    Sobre
+                                <StyledNavLink href="">
+                                    Sobre mim
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="#services">
-                                    Habilidades
+                                <StyledNavLink href="">
+                                    Aprendizado
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="#technologies">
-                                    Tecnologias
+                                <StyledNavLink href="">
+                                    Atividades
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="#portfolio">
-                                    Projetos
-                                </StyledNavLink>
-                            </Item>
-                            <Item>
-                                <StyledNavLink href="#contact">
-                                    Contato
+                                <StyledNavLink href="">
+                                    Outros
                                 </StyledNavLink>
                             </Item>
                             <Item>

@@ -260,8 +260,9 @@ p{
 
 .aboutImage{
   width: 20rem;
-  margin: 2rem;
-  border-radius: 1rem;
+  margin: 1rem;
+  padding: 0.7rem;
+  border-radius: 1.3rem;
 
   @media (min-width: 600px) { //desktop
      width: 40rem;
@@ -286,7 +287,9 @@ export const LearnContent = styled.div`
   overflow: hidden;
 
   p{
-    max-width: 50%;
+    @media (min-width: 600px) { //desktop
+      max-width: 50%;
+    }
     margin-bottom: 3rem;
   }
 
@@ -310,20 +313,22 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+text-align: center;
 background-color:  ${({ theme }) => theme.green};
 color:  ${({ theme }) => theme.white};
 font-style: italic;
 padding: 3rem;
 position: relative;
+margin: 4.5rem 0rem;
 
 div{
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   background-color: ${({ theme }) => theme.green};;
   border-radius: 50%;
 
   position: absolute;
-  top: -32px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -332,7 +337,7 @@ div{
   justify-content: center;
 
   i {
-    font-size: 28px;
+    font-size: 22px;
     color: ${({ theme }) => theme.white};;
   }
 }
@@ -340,4 +345,11 @@ div{
   h3{
     font-size: 0.9rem;
   }
-`
+`;
+
+export const Container = styled.div`
+width: 100%;
+min-height: 100vh;
+height: auto;
+
+`;
