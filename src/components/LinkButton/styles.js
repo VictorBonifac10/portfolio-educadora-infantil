@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Link = styled.a`
-background-color: ${({ theme, variant }) => variant === "secondary" ? "transparent" : theme.green};
-border: 1px solid ${({ theme, variant }) => variant === "secondary" ? theme.green : "transparent"};
-color: ${({ theme, variant }) => variant === "secondary" ? theme.green : theme.white};
+background-color: ${({ theme, variant }) => variant === "secondary" ? "transparent" : theme.purple};
+border: 1px solid ${({ theme, variant }) => variant === "secondary" ? theme.purple : "transparent"};
+color: ${({ theme, variant }) => variant === "secondary" ? theme.purple : theme.white};
 border-radius: 50px;
 padding: 0.3rem 0.8rem;
 text-decoration: none;

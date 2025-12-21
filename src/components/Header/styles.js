@@ -34,7 +34,7 @@ export const Item = styled(CNavItem)` //Navbar
 
     &:hover{ //Effect
     background-color: #fff;
-    color: ${({ theme }) => theme.green};
+    color: ${({ theme }) => theme.purple};
     } 
     }
 `;
@@ -87,11 +87,11 @@ export const StyledNavbarToggler = styled(CNavbarToggler)` //Navbar
 `;
 
 export const StyledNavLink = styled(CNavLink)` //Navbar
-    color: ${({ theme }) => theme.green};
+    color: ${({ theme }) => theme.purple};
 
     &:hover{ //Effect
-    color: ${({ theme }) => theme.green};
-    border-bottom: 2px solid ${({ theme }) => theme.green};
+    color: ${({ theme }) => theme.purple};
+    border-bottom: 2px solid ${({ theme }) => theme.purple};
     }
 `;
 

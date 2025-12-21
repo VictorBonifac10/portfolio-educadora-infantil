@@ -16,8 +16,8 @@ export const CardGrid = styled.section`
 `;
 
 export const Card = styled.div`
-  background-color: #66c37a;
-  color: #fff;
+  background-color: ${({ theme }) => theme.purple};
+  color: ${({ theme }) => theme.white};
   padding: 3.5rem 2rem 2rem;
   text-align: center;
   position: relative;
@@ -46,11 +46,11 @@ export const IconWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  border: 4px solid #66c37a;
+  border: 4px solid ${({ theme }) => theme.purple};
 
   i {
     font-size: 28px;
-    color: #66c37a;
+    color: ${({ theme }) => theme.purple};
   }
 `;
 

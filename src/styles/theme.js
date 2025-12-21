@@ -12,8 +12,11 @@ export const lightTheme = {
 
     borderStandard: "rgba(255, 255, 255, 0.29);", //Standard Border Color
     borderHoverEffect: "#424242ff", //Hover Effect Border Color
-//Common Colors
+    //Common Colors
     black: "#000", //Common Colors
+
+    purple: "rgba(193, 128, 255, 1)",
+    purpleOpacity: "rgba(194, 128, 255, 0.68)"
 };
 
 export const darkTheme = {
@@ -31,5 +34,8 @@ export const darkTheme = {
 
     white: "#fff", //Common Colors
     black: "#000", //Common Colors
+
+    purple: "rgba(218, 176, 255, 1)",
+    purpleOpacity: "rgba(218, 176, 255, 0.68)"
 
 };

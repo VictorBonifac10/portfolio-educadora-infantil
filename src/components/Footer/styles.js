@@ -29,12 +29,12 @@ export const ContainerFooter = styled.footer` //Footer
 
     li{ //Sections from Site 
     a{
-    color: ${({ theme }) => theme.green};
+    color: ${({ theme }) => theme.purple};
     text-decoration: none;
 
     &:hover{ //Effect
-    color: ${({ theme }) => theme.green};
-    border-bottom: 2px solid ${({ theme }) => theme.green};
+    color: ${({ theme }) => theme.purple};
+    border-bottom: 2px solid ${({ theme }) => theme.purple};
     }
     }
     }
@@ -52,7 +52,7 @@ export const ContainerFooter = styled.footer` //Footer
 
     i{ //Icons
     color: white;
-    background-color: ${({ theme }) => theme.green};
+    background-color: ${({ theme }) => theme.purple};
     padding: 0.5rem;
     border-radius: 50px;
     font-size: 20px;
@@ -61,7 +61,7 @@ export const ContainerFooter = styled.footer` //Footer
     transition: 1s all;
 
     &:hover{ //Effect
-    color: ${({ theme }) => theme.green};;
+    color: ${({ theme }) => theme.purple};;
     background-color: white;
     }
     }
@@ -79,7 +79,7 @@ export const ContainerFooter = styled.footer` //Footer
     max-height: 150px;
 
     use{ //Animated Waves
-    fill: rgba(102, 200, 130, 0.3);  
+    fill:  ${({ theme }) => theme.purpleOpacity};
     }
 }
 

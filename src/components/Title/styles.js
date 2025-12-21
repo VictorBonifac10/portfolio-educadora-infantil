@@ -24,7 +24,7 @@ margin: 1rem 0rem;
   left: 0;
   width: 100%;
   height: 1px;
-  background: ${({ theme }) => theme.green};
+  background: ${({ theme }) => theme.purple};
   transform: translateY(-50%);
 }
 
@@ -33,7 +33,7 @@ margin: 1rem 0rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: ${({ theme }) => theme.green}; /* cobre a linha */
+  background: ${({ theme }) => theme.purple}; /* cobre a linha */
   color: ${({ theme }) => theme.white};;
   padding: 0.3rem 0.6rem;
   border-radius: 50px;
@@ -43,7 +43,7 @@ margin: 1rem 0rem;
   display: inline-block;
   animation: jump 2.7s ease-in-out infinite;
   animation-delay: calc(var(--i) * 0.1s);
-  color:  ${({ theme }) => theme.green};
+  color:  ${({ theme }) => theme.purple};
   font-family: 'Cabin Sketch', cursive;
   margin-top: 1.5rem;
 }

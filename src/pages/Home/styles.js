@@ -68,7 +68,7 @@ height: 100vh; //revisar
   animation: jump 2.7s ease-in-out infinite;
   animation-delay: calc(var(--i) * 0.1s);
   font-size: 2.2rem;
-  color:  ${({ theme }) => theme.green};
+  color:  ${({ theme }) => theme.purple};
   font-family: 'Cabin Sketch', cursive;
 
   @media (min-width: 430px) {
@@ -106,7 +106,7 @@ height: 100vh; //revisar
 }
 
   span{
-    color:  ${({ theme }) => theme.green};
+    color:  ${({ theme }) => theme.purple};
     font-size: 0.8rem;
 
     @media (min-width: 600px) { //desktop
@@ -137,11 +137,15 @@ img{
     height: 100vh; //revisar
 }
 
+//    rgba(255, 255, 255, 1) 30%,
+//    rgba(255, 255, 255, 0.9) 60%,
+//    rgba(255, 255, 255, 0.21) 90%
+
 #mask{
     background: linear-gradient(
     50deg,
     rgba(255, 255, 255, 1) 30%,
-    rgba(255, 255, 255, 0.9) 60%,
+    rgba(250, 231, 255, 0.9) 60%,
     rgba(255, 255, 255, 0.21) 90%
     );
     position: absolute;
@@ -195,11 +199,17 @@ img{
     }
 
     i{
-      background-color: ${({ theme }) => theme.green};
+      background-color: ${({ theme }) => theme.purple};
       color:  ${({ theme }) => theme.white};
       font-size: 0.9rem;
       padding: 0.4rem;
       border-radius: 50px;
+      transition: 1s all;
+
+      &:hover{ //Effect
+        color: ${({ theme }) => theme.purple};
+        background-color: ${({ theme }) => theme.white};
+      }
 
       @media (min-width: 600px) { //desktop
         font-size: 1.5rem;
@@ -316,7 +326,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 text-align: center;
-background-color:  ${({ theme }) => theme.green};
+background-color:  ${({ theme }) => theme.purple};
 color:  ${({ theme }) => theme.white};
 font-style: italic;
 padding: 3rem;
@@ -326,7 +336,7 @@ margin: 2.5rem 0rem;
 div{
   width: 40px;
   height: 40px;
-  background-color: ${({ theme }) => theme.green};;
+  background-color: ${({ theme }) => theme.purple};;
   border-radius: 50%;
 
   position: absolute;

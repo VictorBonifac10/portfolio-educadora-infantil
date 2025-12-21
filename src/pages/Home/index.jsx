@@ -3,12 +3,12 @@ import { LinkButton } from "../../components/LinkButton";
 import { contact } from "../../data/contact";
 import { images } from "../../data/images";
 
-import {Body, TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent, PhraseContainer, Container } from "./styles"
+import { Body, TopContainer, Banner, GradientEffect, Main, AboutContainer, AboutContent, LearnContainer, LearnContent, PhraseContainer, Container } from "./styles"
 
 import banner from "../../assets/banner.jpg"
 import person from "../../assets/person.png"
 import about from "../../assets/about.png"
-import { Cards, Footer, Title, WorkTimeline, } from "../../components";
+import { Cards, Footer, Title, Timeline, PhotoSection } from "../../components";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
@@ -132,14 +132,18 @@ export function Home() {
                     <p>“A criança não é um vaso que se deve encher, mas uma fonte que deve ser deixada brotar.”</p>
                     <h3>Maria Montessori (educadora)</h3>
                 </PhraseContainer>
-                {/*
-                    <Container>
-                        <Title icon={<i className="ri-plant-fill"></i>}>
-                            Experiências
-                        </Title>
-                        <WorkTimeline />
-                    </Container>
-                */}
+                <Container>
+                    <Title icon={<i className="ri-plant-fill"></i>}>
+                        Experiências
+                    </Title>
+                    <Timeline />
+                </Container>
+                <Container>
+                    <Title icon={<i className="ri-user-fill"></i>}>
+                        Momentos Educativos
+                    </Title>
+                    <PhotoSection />
+                </Container>
             </Main>
             <Footer />
         </Body>
