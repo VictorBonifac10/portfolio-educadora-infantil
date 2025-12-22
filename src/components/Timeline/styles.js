@@ -7,7 +7,6 @@ export const TimelineContainer = styled(VerticalTimeline)`
     background: ${({ theme }) => theme.purple};
     width: 0.020rem;
   }
-
 `;
 
 export const TimelineElement = styled(VerticalTimelineElement)`

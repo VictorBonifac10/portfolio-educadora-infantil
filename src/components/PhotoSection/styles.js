@@ -2,30 +2,78 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 3rem; 
     margin: 3rem;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background-color: ${({ theme }) => theme.purple};
-    border-radius: 1rem;
+  background-color: ${({ theme }) => theme.purple};
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 
-img{
-    width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .imageWrapper {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 220px;
     object-fit: cover;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-}
+    display: block;
+  }
 
-p{
+  .iconWrapper {
+    width: 44px;
+    height: 44px;
+    background-color: ${({ theme }) => theme.purple};
+    border-radius: 50%;
+    position: absolute;
+    top: 220px;               /* mesma altura da imagem */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    svg {
+      color: #fff;; /* ou branco, conforme o design */
+      font-size: 22px;
+    }
+  }
+
+  h3{
     color: #fff;
-}
+    padding: 1.5rem 2rem 0rem 2rem; /* espaço para o ícone */
+    font-size: 1.3rem;
+  }
+
+  p {
+    color: #fff;
+    font-size: 0.90rem;
+    padding: 0.8rem;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
 `;

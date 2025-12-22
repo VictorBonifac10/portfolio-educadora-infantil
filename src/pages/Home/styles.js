@@ -137,10 +137,6 @@ img{
     height: 100vh; //revisar
 }
 
-//    rgba(255, 255, 255, 1) 30%,
-//    rgba(255, 255, 255, 0.9) 60%,
-//    rgba(255, 255, 255, 0.21) 90%
-
 #mask{
     background: linear-gradient(
     50deg,

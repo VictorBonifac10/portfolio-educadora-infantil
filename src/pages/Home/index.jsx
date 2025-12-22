@@ -8,7 +8,7 @@ import { Body, TopContainer, Banner, GradientEffect, Main, AboutContainer, About
 import banner from "../../assets/banner.jpg"
 import person from "../../assets/person.png"
 import about from "../../assets/about.png"
-import { Cards, Footer, Title, Timeline, PhotoSection } from "../../components";
+import { Cards, Footer, Title, Timeline, PhotoSection, Faq, Contact } from "../../components";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
@@ -143,6 +143,15 @@ export function Home() {
                         Momentos Educativos
                     </Title>
                     <PhotoSection />
+                </Container>
+                <Container>
+                    <Title icon={<i className="ri-user-fill"></i>}>
+                        Perguntas Frequentes
+                    </Title>
+                    <Faq />
+                </Container>
+                <Container>
+                    <Contact />
                 </Container>
             </Main>
             <Footer />

@@ -3,9 +3,11 @@ import { TitleContainer } from "./styles"
 export function Title({ icon, children }) {
     return (
         <TitleContainer>
-            <div class="divider">
-                {icon}
-            </div>
+            {icon && (
+                <div className="divider">
+                    {icon}
+                </div>
+            )}
             <h2 className="jump">
                 {children.split("").map((char, i) =>
                     char === " " ? (
