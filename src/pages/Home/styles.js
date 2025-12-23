@@ -324,31 +324,10 @@ align-items: center;
 text-align: center;
 background-color:  ${({ theme }) => theme.purple};
 color:  ${({ theme }) => theme.white};
-font-style: italic;
+font-style: italic; 
 padding: 3rem;
 position: relative;
-margin: 2.5rem 0rem;
-
-div{
-  width: 40px;
-  height: 40px;
-  background-color: ${({ theme }) => theme.purple};;
-  border-radius: 50%;
-
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  i {
-    font-size: 22px;
-    color: ${({ theme }) => theme.white};;
-  }
-}
+margin: 5rem 0rem;
 
   h3{
     font-size: 0.9rem;

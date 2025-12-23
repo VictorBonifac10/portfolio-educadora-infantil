@@ -86,7 +86,7 @@ export function Home() {
                 <LearnContainer>
                     <LearnContent>
                         <Title icon={<i class="ri-star-smile-fill"></i>}>
-                            Atividades
+                            Atividades e Experiências
                         </Title>
                         <p>Abaixo estão alguns registros de atividades realizadas ao longo da rotina de trabalho, evidenciando propostas aplicadas em diferentes contextos e momentos. As imagens refletem práticas desenvolvidas com organização, intencionalidade e atenção às necessidades individuais, integrando cuidado, aprendizagem e convivência no cotidiano.</p>
 
@@ -125,19 +125,13 @@ export function Home() {
                         </Swiper>
                     </LearnContent>
                 </LearnContainer>
+                <Container>
+                    <Timeline />
+                </Container>
                 <PhraseContainer>
-                    <div>
-                        <i className="ri-globe-fill"></i>
-                    </div>
                     <p>“A criança não é um vaso que se deve encher, mas uma fonte que deve ser deixada brotar.”</p>
                     <h3>Maria Montessori (educadora)</h3>
                 </PhraseContainer>
-                <Container>
-                    <Title icon={<i className="ri-plant-fill"></i>}>
-                        Experiências
-                    </Title>
-                    <Timeline />
-                </Container>
                 <Container>
                     <Title icon={<i className="ri-user-fill"></i>}>
                         Momentos Educativos

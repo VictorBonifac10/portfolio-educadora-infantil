@@ -11,6 +11,7 @@ text-align: center;
 padding: 1rem;
 width: 100%;
 height: 100vh; //revisar
+margin-top: 4rem;
 
 img{
     position: absolute;
@@ -35,6 +36,22 @@ img{
     width: 100%;
     height: 100vh; //revisar
     z-index: 1;
+}
+
+section{
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffffee;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+a{
+    background-color: ${({ theme }) => theme.purple};
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
 }
 
 `

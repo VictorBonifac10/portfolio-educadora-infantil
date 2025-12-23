@@ -59,7 +59,12 @@ export function Header() {
                     </Item>
                     <Item>
                         <StyledNavLink href="">
-                            Outros
+                            Experiências
+                        </StyledNavLink>
+                    </Item>
+                    <Item>
+                        <StyledNavLink href="">
+                            Contato
                         </StyledNavLink>
                     </Item>
                     <Item>
@@ -111,7 +116,12 @@ export function Header() {
                             </Item>
                             <Item>
                                 <StyledNavLink href="">
-                                    Outros
+                                    Experiências
+                                </StyledNavLink>
+                            </Item>
+                            <Item>
+                                <StyledNavLink href="">
+                                    Contato
                                 </StyledNavLink>
                             </Item>
                             <Item>

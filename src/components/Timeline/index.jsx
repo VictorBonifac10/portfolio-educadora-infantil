@@ -1,5 +1,6 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { useTheme } from "styled-components";
 
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
@@ -8,13 +9,16 @@ import StarIcon from '@mui/icons-material/Star';
 import { TimelineContainer, TimelineElement } from './styles';
 
 export function Timeline() {
+
+    const theme = useTheme();
+
     return (
 
         <TimelineContainer>
             <TimelineElement
                 className="vertical-timeline-element--education"
                 date="abr 2025 - set 2025"
-                iconStyle={{ background: 'rgba(193, 128, 255, 1)', color: '#fff' }}
+                iconStyle={{ background: theme.purple, color: '#fff' }}
                 icon={<WorkIcon />}
             >
                 <h3 className="vertical-timeline-element-title">Professora Auxiliar</h3>
@@ -26,7 +30,7 @@ export function Timeline() {
             <TimelineElement
                 className="vertical-timeline-element--education"
                 date="fev 2023 - nov 2027"
-                iconStyle={{ background: 'rgba(193, 128, 255, 1)', color: '#fff' }}
+                iconStyle={{ background: theme.purple, color: '#fff' }}
                 icon={<SchoolIcon />}
             >
                 <h3 className="vertical-timeline-element-title">Pedagogia</h3>
@@ -38,7 +42,7 @@ export function Timeline() {
             <TimelineElement
                 className="vertical-timeline-element--education"
                 date="jun 2021 - abr 2025"
-                iconStyle={{ background: 'rgba(193, 128, 255, 1)', color: '#fff' }}
+                iconStyle={{ background: theme.purple, color: '#fff' }}
                 icon={<WorkIcon />}
             >
                 <h3 className="vertical-timeline-element-title">Cuidadora infantil</h3>
@@ -48,7 +52,7 @@ export function Timeline() {
                 </p>
             </TimelineElement>
             <TimelineElement
-                iconStyle={{ background: 'rgba(193, 128, 255, 1)', color: '#fff' }}
+                iconStyle={{ background: theme.purple, color: '#fff' }}
                 icon={<StarIcon />}
             />
         </TimelineContainer >

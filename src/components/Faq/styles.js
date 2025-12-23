@@ -21,10 +21,27 @@ export const AccordionCard = styled(Accordion)`
 width: 100%;
 
 h4{
-    color: #818181ff;
-    font-size: 1.2rem;
+    color: #7f7f7fff;
+    font-weight: 400;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
+}
+
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.indice{
+    background-color: ${({ theme }) => theme.purple};
+    padding: 0.4rem 0.77rem;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 svg {

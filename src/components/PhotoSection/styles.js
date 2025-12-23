@@ -15,11 +15,12 @@ export const CardContainer = styled.div`
 
     @media (max-width: 600px) {
         grid-template-columns: 1fr;
+        margin: 1rem;
     }
 `;
 
 export const Card = styled.div`
-  background-color: ${({ theme }) => theme.purple};
+  background-color: ${({ theme }) => theme.purple}; 
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
