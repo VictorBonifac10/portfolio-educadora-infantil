@@ -50,15 +50,16 @@ export const ContainerFooter = styled.footer` //Footer
           text-decoration: none;
     }
 
-    i{ //Icons
+    svg{ //Icons
     color: white;
     background-color: ${({ theme }) => theme.purple};
     padding: 0.5rem;
     border-radius: 50px;
-    font-size: 20px;
     transition: 0.5s;
     cursor: pointer;
     transition: 1s all;
+    width: 2.3rem;
+    height: 2.3rem;
 
     &:hover{ //Effect
     color: ${({ theme }) => theme.purple};;

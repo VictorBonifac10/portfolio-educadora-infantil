@@ -6,25 +6,30 @@ import {
     Title
 } from "./styles";
 
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import PaletteIcon from '@mui/icons-material/Palette';
+
 const cards = [
     {
-        icon: "ri-brain-fill",
+        icon: <EmojiObjectsIcon />,
         title: "Estímulo Cognitivo",
         description: "Atividades planejadas para estimular atenção, memória, raciocínio lógico e resolução de problemas, respeitando a faixa etária e o ritmo individual."
     },
     {
-        icon: "ri-hand-heart-fill",
+        icon: <VolunteerActivismIcon />,
         title: "Estímulo Sensorial e Motor",
         description: "Propostas que envolvem coordenação motora fina e ampla, percepção tátil, visual e auditiva, favorecendo o desenvolvimento corporal e sensorial."
     },
     {
-        icon: "ri-chat-3-fill",
+        icon: <ChatBubbleIcon />,
         title: "Evolução Socioemocional",
         description: "Vivências que promovem a construção da autonomia, empatia, autorregulação emocional e habilidades de convivência."
 
     },
     {
-        icon: "ri-palette-fill",
+        icon: <PaletteIcon />,
         title: "Linguagem e Expressão",
         description: "Atividades que estimulam a comunicação oral, a imaginação e a expressão por meio da música, histórias, artes e brincadeiras simbólicas."
     },
@@ -36,7 +41,7 @@ export function Cards() {
             {cards.map((card, index) => (
                 <Card key={index}>
                     <IconWrapper>
-                        <i className={card.icon}></i>
+                        {card.icon}
                     </IconWrapper>
                     <Title>{card.title}</Title>
                     <CardText>

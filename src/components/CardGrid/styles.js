@@ -48,9 +48,9 @@ export const IconWrapper = styled.div`
 
   border: 4px solid ${({ theme }) => theme.purple};
 
-  i {
-    font-size: 28px;
-    color: ${({ theme }) => theme.purple};
+  svg{
+    fill: ${({ theme }) => theme.purple};
+    font-size: 1.8rem;
   }
 `;
 

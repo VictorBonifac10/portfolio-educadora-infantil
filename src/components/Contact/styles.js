@@ -20,7 +20,7 @@ img{
     left: 0;
     z-index: 0;
     width: 100%;
-    height: 100vh; //revisar
+    height: 100vh;
 }
 
 #mask{
@@ -39,6 +39,7 @@ img{
 }
 
 section{
+
     position: absolute;
     z-index: 2;
     background-color: #ffffffee;

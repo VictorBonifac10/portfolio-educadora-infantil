@@ -28,7 +28,7 @@ margin: 1rem 0rem;
   transform: translateY(-50%);
 }
 
-.divider i {
+.divider i, .divider svg {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -45,6 +45,11 @@ margin: 1rem 0rem;
   width: 50px;
   height: 50px;
   border-radius: 50px;
+}
+
+.divider svg{
+
+  padding: 0.5rem;
 }
 
 .jump span {

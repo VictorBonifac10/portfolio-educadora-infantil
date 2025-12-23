@@ -187,20 +187,20 @@ img{
 
     @media (min-width: 600px) { //desktop
       flex-direction: column;
-       gap: 2rem;
+       gap: 1rem;
     }
 
     a{
       text-decoration: none;
     }
 
-    i{
+    svg{
       background-color: ${({ theme }) => theme.purple};
       color:  ${({ theme }) => theme.white};
-      font-size: 0.9rem;
-      padding: 0.4rem;
+      font-size: 1rem;
       border-radius: 50px;
       transition: 1s all;
+      padding: 0.3rem;
 
       &:hover{ //Effect
         color: ${({ theme }) => theme.purple};
@@ -208,8 +208,7 @@ img{
       }
 
       @media (min-width: 600px) { //desktop
-        font-size: 1.5rem;
-        padding: 0.6rem;
+        font-size: 2rem;
       }
     }
 }

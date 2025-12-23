@@ -4,6 +4,9 @@ import { ContainerFooter, Text } from "./styles";
 //Datas
 import { contact } from "../../data/contact";
 
+import InfoIcon from '@mui/icons-material/Info';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export function Footer() {
 
@@ -33,13 +36,13 @@ export function Footer() {
             {contact.map(data => (
                 <section>
                     <a href={data.instagram} target="_blank" rel="noreferrer">
-                        <i className="ri-instagram-line"></i>
+                        <InstagramIcon />
                     </a>
                     <a href={data.whatsapp} target="_blank" rel="noreferrer">
-                        <i className="ri-whatsapp-line"></i>
+                        <WhatsAppIcon />
                     </a>
                     <a href={data.forms} target="_blank" rel="noreferrer">
-                        <i className="ri-information-line"></i>
+                        <InfoIcon />
                     </a>
                 </section>
             ))}

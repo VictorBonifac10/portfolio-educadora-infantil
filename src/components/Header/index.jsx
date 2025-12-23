@@ -13,6 +13,9 @@ import {
 
 import '@coreui/coreui/dist/css/coreui.min.css'
 
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+
 //Next Themes Library (darkmode)
 import { useTheme } from "next-themes";
 
@@ -68,8 +71,11 @@ export function Header() {
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <button className="darkMode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                            <i className={theme === "dark" ? "ri-sun-line" : "ri-moon-line"}></i>
+                        <button
+                            className="darkMode"
+                            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                        >
+                            {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
                         </button>
                     </Item>
                 </CNavbarNav>
@@ -125,9 +131,14 @@ export function Header() {
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <button className="darkMode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                                    <i className={theme === "dark" ? "ri-sun-line" : "ri-moon-line"}></i>
-                                </button>
+                                <Item>
+                                    <button
+                                        className="darkMode"
+                                        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                                    >
+                                        {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
+                                    </button>
+                                </Item>
                             </Item>
                         </CNavbarNav>
                     </COffcanvasBody>

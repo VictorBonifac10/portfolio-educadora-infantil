@@ -19,23 +19,28 @@ export const StyledNavbar = styled(CNavbar)` //Navbar
 
 export const Item = styled(CNavItem)` //Navbar
 
-    .darkMode{  //Darkmode Button
+.darkMode{  //Darkmode Button
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid ${({ theme }) => theme.purple};
     border-radius: 50px;
     margin: 0;
-    padding: 8px 12px;
-    color: gray;
+    padding: 8px;
+    color: ${({ theme }) => theme.purple};
     font-size: 15px;
     transition: 0.5s all;
 
     &:hover{ //Effect
     background-color: #fff;
-    color: ${({ theme }) => theme.purple};
+    color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.purple};
     } 
+
+    svg{
+        font-size: 1.3rem;
+    }
     }
 `;
 

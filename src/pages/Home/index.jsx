@@ -10,6 +10,15 @@ import person from "../../assets/person.png"
 import about from "../../assets/about.png"
 import { Cards, Footer, Title, Timeline, PhotoSection, Faq, Contact } from "../../components";
 
+
+import ExtensionIcon from '@mui/icons-material/Extension';
+import PersonIcon from '@mui/icons-material/Person';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import CategoryIcon from '@mui/icons-material/Category';
+import InfoIcon from '@mui/icons-material/Info';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
@@ -52,13 +61,13 @@ export function Home() {
                     {contact.map((data) => (
                         <section id="secondContent" key={data.instagram}>
                             <a href={data.instagram} target="_blank" rel="noreferrer">
-                                <i className="ri-instagram-line"></i>
+                                <InstagramIcon />
                             </a>
                             <a href={data.whatsapp} target="_blank" rel="noreferrer">
-                                <i className="ri-whatsapp-line"></i>
+                                <WhatsAppIcon />
                             </a>
                             <a href={data.forms} target="_blank" rel="noreferrer">
-                                <i className="ri-information-line"></i>
+                                <InfoIcon />
                             </a>
                         </section>
                     ))}
@@ -68,7 +77,7 @@ export function Home() {
             <Main>
                 <AboutContainer>
                     <AboutContent>
-                        <Title icon={<i className="ri-user-fill"></i>}>
+                        <Title icon={<PersonIcon />}>
                             Sobre mim
                         </Title>
                         <p>
@@ -79,13 +88,13 @@ export function Home() {
                         <img src={about} className="aboutImage" alt="Mulher segurando criança" />
                     </AboutContent>
                 </AboutContainer>
-                <Title icon={<i class="ri-shapes-fill"></i>}>
+                <Title icon={<PsychologyIcon />}>
                     Aprendizado
                 </Title>
                 <Cards />
                 <LearnContainer>
                     <LearnContent>
-                        <Title icon={<i class="ri-star-smile-fill"></i>}>
+                        <Title icon={<CategoryIcon />}>
                             Atividades e Experiências
                         </Title>
                         <p>Abaixo estão alguns registros de atividades realizadas ao longo da rotina de trabalho, evidenciando propostas aplicadas em diferentes contextos e momentos. As imagens refletem práticas desenvolvidas com organização, intencionalidade e atenção às necessidades individuais, integrando cuidado, aprendizagem e convivência no cotidiano.</p>
@@ -104,6 +113,8 @@ export function Home() {
                             freeMode={true}
                             freeModeMomentum={false}
                             grabCursor={false}
+                            allowTouchMove={false}   // 👈 impede clique/drag
+                            simulateTouch={false}   // 👈 impede interação por mouse
                         >
                             {images.map((img, index) => (
                                 <SwiperSlide
@@ -133,13 +144,13 @@ export function Home() {
                     <h3>Maria Montessori (educadora)</h3>
                 </PhraseContainer>
                 <Container>
-                    <Title icon={<i className="ri-user-fill"></i>}>
+                    <Title icon={<ExtensionIcon />}>
                         Momentos Educativos
                     </Title>
                     <PhotoSection />
                 </Container>
                 <Container>
-                    <Title icon={<i className="ri-user-fill"></i>}>
+                    <Title icon={<InfoIcon />}>
                         Perguntas Frequentes
                     </Title>
                     <Faq />
