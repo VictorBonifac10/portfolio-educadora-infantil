@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
+//-----------------Container
 export const TitleContainer = styled.div`
-
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -9,7 +9,7 @@ align-items: center;
 width: 100%;
 margin: 1rem 0rem;
 
-
+//-----------------Container
 .divider {
   position: relative;
   width: 80%;
@@ -28,6 +28,7 @@ margin: 1rem 0rem;
   transform: translateY(-50%);
 }
 
+//-----------------Image
 .divider i, .divider svg {
   position: absolute;
   left: 50%;
@@ -47,11 +48,12 @@ margin: 1rem 0rem;
   border-radius: 50px;
 }
 
+//-----------------Image
 .divider svg{
-
   padding: 0.5rem;
 }
 
+//-----------------Title
 .jump span {
   display: inline-block;
   animation: jump 2.7s ease-in-out infinite;
@@ -60,11 +62,13 @@ margin: 1rem 0rem;
   font-family: 'Cabin Sketch', cursive;
 }
 
+//-----------------Space
 .jump .space {
   animation: none;
   width: 0.2ch;
 }
 
+//-----------------Text Animated
 @keyframes jump {
   0%,
   100% {
@@ -76,7 +80,6 @@ margin: 1rem 0rem;
   }
 }
 
-/* ♿ acessibilidade */
 @media (prefers-reduced-motion: reduce) {
   .jump span {
     animation: none;

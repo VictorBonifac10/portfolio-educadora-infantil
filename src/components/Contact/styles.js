@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
+//-----------------Container
 export const ContactContainer = styled.div`
-
 display: flex;
 flex-direction: column;
 position: relative;
@@ -10,9 +10,10 @@ justify-content: center;
 text-align: center;
 padding: 1rem;
 width: 100%;
-height: 100vh; //revisar
+height: 100vh;
 margin-top: 4rem;
 
+//-----------------Background Image
 img{
     position: absolute;
     object-fit: cover;
@@ -23,6 +24,7 @@ img{
     height: 100vh;
 }
 
+//-----------------Gradient
 #mask{
     background: linear-gradient(
     50deg,
@@ -38,8 +40,8 @@ img{
     z-index: 1;
 }
 
+//-----------------Card
 section{
-
     position: absolute;
     z-index: 2;
     background-color: #ffffffee;
@@ -47,6 +49,7 @@ section{
     border-radius: 1rem;
 }
 
+//-----------------Link
 a{
     background-color: ${({ theme }) => theme.purple};
     color: #fff;
@@ -54,5 +57,4 @@ a{
     padding: 0.5rem 1rem;
     border-radius: 50px;
 }
-
-`
+`;

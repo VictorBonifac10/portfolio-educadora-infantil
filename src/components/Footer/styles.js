@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const ContainerFooter = styled.footer` //Footer
+//-----------------Footer
+export const ContainerFooter = styled.footer`
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,13 +12,10 @@ export const ContainerFooter = styled.footer` //Footer
     width: 100%;
     padding: 0.5rem 2rem;
     margin-top: 40px;
+
     
-
-    img{ //Logo
-    width: 250px;
-    }
-
-    ul{ //Sections from Site 
+//-----------------Sections
+    ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +25,10 @@ export const ContainerFooter = styled.footer` //Footer
     padding: 0;
     max-width: 300px;
 
-    li{ //Sections from Site 
-    a{
+//-----------------Sections
+    li{
+
+    a{ //Link
     color: ${({ theme }) => theme.purple};
     text-decoration: none;
 
@@ -40,17 +40,19 @@ export const ContainerFooter = styled.footer` //Footer
     }
   }
 
-    section{ //Icon Section
+//-----------------Icon Section
+    section{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 
-    a{
+    a{ //Link
           text-decoration: none;
     }
-
-    svg{ //Icons
+    
+//-----------------Social Media Icons
+    svg{ 
     color: white;
     background-color: ${({ theme }) => theme.purple};
     padding: 0.5rem;
@@ -67,8 +69,9 @@ export const ContainerFooter = styled.footer` //Footer
     }
     }
   }
-
-  .waves { //Animated Waves
+  
+//-----------------Waves
+  .waves {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -118,7 +121,7 @@ export const ContainerFooter = styled.footer` //Footer
     }
     }
 
-    @media (max-width: 768px) { //Responsive
+    @media (max-width: 768px) {
     .waves {
     height: 40px;
     min-height: 40px;
@@ -134,6 +137,7 @@ export const ContainerFooter = styled.footer` //Footer
   }
 `;
 
-export const Text = styled.div` //Atributtes
+//-----------------Atributtes
+export const Text = styled.div`
     max-width: 500px;
 `;

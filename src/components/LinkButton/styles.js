@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//-----------------Link
 export const Link = styled.a`
 background-color: ${({ theme, variant }) => variant === "secondary" ? "transparent" : theme.purple};
 border: 1px solid ${({ theme, variant }) => variant === "secondary" ? theme.purple : "transparent"};

@@ -1,4 +1,4 @@
-
+//Styles
 import { Link } from "./styles"
 
 export function LinkButton({ children, ...props }) {

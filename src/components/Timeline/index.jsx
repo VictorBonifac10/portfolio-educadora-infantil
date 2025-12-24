@@ -1,12 +1,15 @@
+//Styles
+import { TimelineContainer, TimelineElement } from './styles';
+
+//React Vertical Timeline Componet
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { useTheme } from "styled-components";
 
+//Icons
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import StarIcon from '@mui/icons-material/Star';
-
-import { TimelineContainer, TimelineElement } from './styles';
 
 export function Timeline() {
 

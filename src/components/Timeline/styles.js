@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 
+//-----------------Timeline
 export const TimelineContainer = styled(VerticalTimeline)`
 
   &::before {
-    background: #f0f0f0ff; //${({ theme }) => theme.purple};
+    background: #f0f0f0ff;
     width: 0.020rem;
   }
 `;
 
+//-----------------Timeline Card
 export const TimelineElement = styled(VerticalTimelineElement)`
 
     h3{

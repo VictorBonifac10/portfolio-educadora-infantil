@@ -1,9 +1,8 @@
 import styled from "styled-components";
-
 import Accordion from '@mui/material/Accordion';
 
+//-----------------Container
 export const AccordionContainer = styled.div`
-
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -17,9 +16,9 @@ padding: 0.5rem;
 `;
 
 export const AccordionCard = styled(Accordion)`
-
 width: 100%;
 
+//-----------------Text
 h4{
     color: #7f7f7fff;
     font-weight: 400;
@@ -28,6 +27,7 @@ h4{
     padding: 0;
 }
 
+//-----------------Question
 .question{
     display: flex;
     justify-content: center;
@@ -35,6 +35,7 @@ h4{
     gap: 0.6rem;
 }
 
+//-----------------Indice
 .indice{
     background-color: ${({ theme }) => theme.purple};
     padding: 0.4rem 0.77rem;
@@ -44,10 +45,12 @@ h4{
     font-weight: 500;
 }
 
+//-----------------Arrow Icon
 svg {
     color: ${({ theme }) => theme.purple};
 }
 
+//-----------------Answer
 p{
     color: #3d3d3dff;
 }

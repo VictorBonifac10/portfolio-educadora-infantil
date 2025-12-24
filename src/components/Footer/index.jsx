@@ -1,9 +1,10 @@
-//Tags from Styles
+//Styles
 import { ContainerFooter, Text } from "./styles";
 
-//Datas
+//Data
 import { contact } from "../../data/contact";
 
+//Icons
 import InfoIcon from '@mui/icons-material/Info';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';

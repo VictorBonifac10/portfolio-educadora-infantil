@@ -1,33 +1,33 @@
 import styled from "styled-components";
 
+//-----------------Container
 export const CardContainer = styled.div`
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: center;
+align-items: center;
+gap: 3rem; 
+margin: 3rem;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 3rem; 
-    margin: 3rem;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 600px) {
-        grid-template-columns: 1fr;
-        margin: 1rem;
-    }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
 `;
 
+//-----------------Card
 export const Card = styled.div`
-  background-color: ${({ theme }) => theme.purple}; 
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+background-color: ${({ theme }) => theme.purple}; 
+border-radius: 1rem;
+overflow: hidden;
+position: relative;
+text-align: center;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   .imageWrapper {
     width: 100%;
@@ -46,7 +46,7 @@ export const Card = styled.div`
     background-color: ${({ theme }) => theme.purple};
     border-radius: 50%;
     position: absolute;
-    top: 220px;               /* mesma altura da imagem */
+    top: 220px;    
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -56,14 +56,14 @@ export const Card = styled.div`
     z-index: 2;
 
     svg {
-      color: #fff;; /* ou branco, conforme o design */
+      color: #fff;
       font-size: 22px;
     }
   }
 
   h3{
     color: #fff;
-    padding: 1.5rem 2rem 0rem 2rem; /* espaço para o ícone */
+    padding: 1.5rem 2rem 0rem 2rem;
     font-size: 1.3rem;
   }
 

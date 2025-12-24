@@ -1,9 +1,12 @@
+//Styles
 import { CardContainer, Card } from './styles'
 
+//Icons
 import PaletteIcon from '@mui/icons-material/Palette';
 import EditIcon from '@mui/icons-material/Edit';
 import CalculateIcon from '@mui/icons-material/Calculate';
 
+//Midias
 import img1 from '../../assets/learning-game6.jpeg'
 import img2 from '../../assets/learning-game7.jpeg'
 import img3 from "../../assets/learning-game3.jpeg"

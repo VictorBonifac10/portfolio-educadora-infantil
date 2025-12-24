@@ -1,7 +1,11 @@
-import childreen from '../../assets/childreen.jpg'
-import { Title } from '../Title'
-
+//Styles
 import { ContactContainer } from './styles'
+
+//Midias
+import childreen from '../../assets/childreen.jpg'
+
+//Components
+import { Title } from '../index'
 
 export function Contact() {
     return (

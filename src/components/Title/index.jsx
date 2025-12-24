@@ -1,3 +1,4 @@
+//Styles
 import { TitleContainer } from "./styles"
 
 export function Title({ icon, children }) {

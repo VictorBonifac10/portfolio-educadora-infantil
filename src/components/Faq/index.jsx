@@ -1,10 +1,13 @@
+//Styles
+import { AccordionContainer, AccordionCard } from './styles'
+
+//Components
+import { Title } from '../index';
+
+//Icons
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-import { AccordionContainer, AccordionCard } from './styles'
-
-import { Title } from '../Title';
 
 export function Faq() {
     return (
