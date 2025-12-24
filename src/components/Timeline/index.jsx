@@ -37,7 +37,7 @@ export function Timeline() {
                 icon={<SchoolIcon />}
             >
                 <h3 className="vertical-timeline-element-title">Pedagogia</h3>
-                <h4 className="vertical-timeline-element-subtitle">Anhaguera, Matão</h4>
+                <h4 className="vertical-timeline-element-subtitle">Anhanguera, Matão</h4>
                 <p>
                     Desenvolvimento de habilidades para o planejamento e a execução de atividades pedagógicas alinhadas às necessidades e aos diferentes ritmos de aprendizagem dos alunos.
                 </p>

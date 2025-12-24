@@ -78,7 +78,6 @@ export const ContainerFooter = styled.footer`
     width: 100%;
     height: 15vh;
     z-index: 0;
-    margin-bottom: -7px;
     min-height: 100px;
     max-height: 150px;
 
@@ -139,5 +138,11 @@ export const ContainerFooter = styled.footer`
 
 //-----------------Atributtes
 export const Text = styled.div`
-    max-width: 500px;
+    max-width: 50%;
+    font-size: 0.9rem;
+
+    p{
+    margin-bottom: 5.5rem;
+    }
+
 `;

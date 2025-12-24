@@ -46,27 +46,27 @@ export function Header() {
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="">
+                        <StyledNavLink href="#about">
                             Sobre mim
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="">
+                        <StyledNavLink href="#learn">
                             Aprendizado
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="">
+                        <StyledNavLink href="#experences">
                             Atividades
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="">
-                            Experiências
+                        <StyledNavLink href="#faq">
+                            Perguntas
                         </StyledNavLink>
                     </Item>
                     <Item>
-                        <StyledNavLink href="">
+                        <StyledNavLink href="#contact">
                             Contato
                         </StyledNavLink>
                     </Item>
@@ -106,27 +106,27 @@ export function Header() {
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="">
+                                <StyledNavLink href="#about">
                                     Sobre mim
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="">
+                                <StyledNavLink href="#learn">
                                     Aprendizado
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="">
+                                <StyledNavLink href="#experences">
                                     Atividades
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="">
-                                    Experiências
+                                <StyledNavLink href="#faq">
+                                    Perguntas
                                 </StyledNavLink>
                             </Item>
                             <Item>
-                                <StyledNavLink href="">
+                                <StyledNavLink href="#contact">
                                     Contato
                                 </StyledNavLink>
                             </Item>

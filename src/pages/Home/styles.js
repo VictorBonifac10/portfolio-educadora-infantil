@@ -117,8 +117,8 @@ height: 100vh;
 
 //-----------------Descrição do TopContainer
   p{
-    font-size: 0.6rem;
-    max-width: 15rem;
+    max-width: 100%;
+    font-size: 0.8rem;
     margin: 0;
 
     @media (min-width: 600px) {
@@ -192,7 +192,7 @@ img{
 
     @media (min-width: 600px) {
       flex-direction: column;
-       gap: 1rem;
+      gap: 1rem;
     }
 
 //-----------------Link
@@ -204,10 +204,10 @@ img{
     svg{
       background-color: ${({ theme }) => theme.purple};
       color:  ${({ theme }) => theme.white};
-      font-size: 1rem;
+      font-size: 1.5rem;
       border-radius: 50px;
       transition: 1s all;
-      padding: 0.3rem;
+      padding: 0.4rem;
 
       &:hover{ //Effect
         color: ${({ theme }) => theme.purple};
@@ -215,7 +215,7 @@ img{
       }
 
       @media (min-width: 600px) { //desktop
-        font-size: 2rem;
+        font-size: 2.3rem;
       }
     }
 }

@@ -15,23 +15,26 @@ export function Footer() {
     return (
         <ContainerFooter>
             <Text>
-                Educar é cuidar com presença, respeito e propósito.
+                Educar é cuidar com presença, respeito e propósito!
             </Text>
             <ul>
                 <li>
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">Sobre mim</a>
+                    <a href="#about">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="">Aprendizado</a>
+                    <a href="#learn">Aprendizado</a>
                 </li>
                 <li>
-                    <a href="">Atividades</a>
+                    <a href="#experences">Atividades</a>
                 </li>
                 <li>
-                    <a href="">Outros</a>
+                    <a href="#faq">Perguntas</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
                 </li>
             </ul>
             {contact.map(data => (
@@ -48,7 +51,9 @@ export function Footer() {
                 </section>
             ))}
             <Text>
-                © 2025 Nubia Carraro • Todos os direitos reservados <br />Desenvolvido por Victor Bonifácio
+                <p>
+                    © 2025 Nubia Carraro • Todos os direitos reservados <br />Desenvolvido por <a href="https://victorbonifacio.netlify.app/" target="_blank">Victor Bonifácio</a>
+                </p>
             </Text>
             <svg
                 className="waves"

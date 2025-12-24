@@ -36,17 +36,31 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; //revisar
+    height: 100vh;
     z-index: 1;
 }
 
 //-----------------Card
 section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     z-index: 2;
     background-color: #ffffffee;
-    padding: 2rem;
+    padding: 1rem 0.9rem;
     border-radius: 1rem;
+    margin: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1rem;
+
+    @media(min-width: 600px){
+    width: 40%;
+    height: 40%;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    }
 }
 
 //-----------------Link
@@ -54,7 +68,22 @@ a{
     background-color: ${({ theme }) => theme.purple};
     color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
     border-radius: 50px;
+    transition: 0.5s all;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+
+    svg{
+    font-size: 1.2rem;
+    }
+
+    &:hover{
+    background-color: transparent;
+    color: ${({ theme }) => theme.purple};
+    }
 }
 `;

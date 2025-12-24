@@ -28,7 +28,7 @@ export function Home() {
     return (
         <Body>
             <Header />
-            <TopContainer>
+            <TopContainer id="top">
                 <img id="person" src={person} alt="Educadora Infantil" />
                 <Banner>
                     <img src={banner} alt="Bebê brincando com brinquedos" />
@@ -74,7 +74,7 @@ export function Home() {
             <GradientEffect />
 
             <Main>
-                <Container>
+                <Container id="about">
                     <Title icon={<PersonIcon />}>Sobre mim</Title>
                     <Text>
                         <p>
@@ -86,12 +86,12 @@ export function Home() {
                     <img src={about} className="aboutImage" alt="Mulher segurando criança" />
                 </Container>
 
-                <Container>
+                <Container id="learn">
                     <Title icon={<PsychologyIcon />}>Aprendizado</Title>
                     <Cards />
                 </Container>
 
-                <Container>
+                <Container id="experences">
                     <Title icon={<CategoryIcon />}>Atividades e Experiências</Title>
                     <Text>
                         <p>Abaixo estão alguns registros de atividades realizadas ao longo da rotina de trabalho, evidenciando propostas aplicadas em diferentes contextos e momentos. As imagens refletem práticas desenvolvidas com organização, intencionalidade e atenção às necessidades individuais, integrando cuidado, aprendizagem e convivência no cotidiano.</p>
@@ -113,12 +113,12 @@ export function Home() {
                     <PhotoSection />
                 </Container>
 
-                <Container>
+                <Container id="faq">
                     <Title icon={<InfoIcon />}>Perguntas Frequentes</Title>
                     <Faq />
                 </Container>
 
-                <Container>
+                <Container id="contact">
                     <Contact />
                 </Container>
             </Main>

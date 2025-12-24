@@ -7,6 +7,9 @@ import childreen from '../../assets/childreen.jpg'
 //Components
 import { Title } from '../index'
 
+//Icons
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
 export function Contact() {
     return (
         <ContactContainer>
@@ -16,7 +19,11 @@ export function Contact() {
                 <Title>
                     Se interessou?
                 </Title>
-                <p>Entre em contato pelo (16)99716-1628 <br /> <br /> ou <a href='#'>clique aqui</a></p>
+
+                <p>Entre em contato pelo (16)99716-1628 ou</p>
+
+                <a href='#'><WhatsAppIcon /> clique aqui</a>
+
             </section>
         </ContactContainer>
     )
