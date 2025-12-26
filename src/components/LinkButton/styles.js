@@ -18,7 +18,7 @@ cursor: pointer;
     color: ${({ theme, variant }) => variant === "secondary" ? theme.white : theme.purple};
 }
 
-    @media (min-width: 600px) { //desktop
+    @media (min-width: 910px) { //desktop
         padding: 0.7rem 1.5rem;
         font-size: 1rem;
     }

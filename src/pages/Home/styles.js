@@ -32,7 +32,7 @@ justify-content: end;
     width: 21rem;
   }
     
-  @media (min-width: 800px) {
+  @media (min-width: 910px) {
     margin-left: 35rem;
     width: 26rem;
   }
@@ -51,8 +51,9 @@ margin-bottom: 8rem;
 padding: 1rem;
 width: 100%;
 height: 100vh;
+gap: 0.2rem;
 
-  @media (min-width: 600px) {
+  @media (min-width: 910px) {
     flex-direction: row; 
     justify-content: space-between;
     padding: 0rem 3rem;
@@ -61,11 +62,16 @@ height: 100vh;
   }
 
 //-----------------Letras animadas
+.jump{
+  margin: 0;
+  padding: 0;
+}
+
 .jump span {
   display: inline-block;
   animation: jump 2.7s ease-in-out infinite;
   animation-delay: calc(var(--i) * 0.1s);
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color:  ${({ theme }) => theme.purple};
   font-family: 'Cabin Sketch', cursive;
 
@@ -73,7 +79,7 @@ height: 100vh;
     font-size: 3.3rem;
   }
   
-  @media (min-width: 600px) {
+  @media (min-width: 910px) {
     font-size: 6rem;
     line-height: 4rem;
   }
@@ -107,9 +113,9 @@ height: 100vh;
 //-----------------Subtitulo do TopContainer
   span{
     color:  ${({ theme }) => theme.purple};
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 
-    @media (min-width: 600px) { //desktop
+    @media (min-width: 910px) { //desktop
       font-size: 1.3rem;
       padding-left: 0.3rem ;
     } 
@@ -117,11 +123,11 @@ height: 100vh;
 
 //-----------------Descrição do TopContainer
   p{
-    max-width: 100%;
-    font-size: 0.8rem;
+    max-width: 90%;
+    font-size: 0.9rem;
     margin: 0;
 
-    @media (min-width: 600px) {
+    @media (min-width: 910px) {
       font-size: 1.1rem;
       max-width: 35rem;
       padding-left: 0.3rem ;
@@ -165,7 +171,7 @@ img{
     z-index: 2;
     gap: 1rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 910px) {
       gap: 1.8rem;
       align-items: start;
       justify-content: start;
@@ -176,7 +182,7 @@ img{
       justify-content: center;
       gap: 0.5rem;
 
-      @media (min-width: 600px) { //desktop
+      @media (min-width: 910px) { //desktop
         justify-content: flex-start;
       }   
     }
@@ -190,7 +196,7 @@ img{
     margin: 1rem;
     z-index: 2;
 
-    @media (min-width: 600px) {
+    @media (min-width: 910px) {
       flex-direction: column;
       gap: 1rem;
     }
@@ -204,17 +210,17 @@ img{
     svg{
       background-color: ${({ theme }) => theme.purple};
       color:  ${({ theme }) => theme.white};
-      font-size: 1.5rem;
+      font-size: 1.9rem;
       border-radius: 50px;
       transition: 1s all;
-      padding: 0.4rem;
+      padding: 0.3rem;
 
       &:hover{ //Effect
         color: ${({ theme }) => theme.purple};
         background-color: ${({ theme }) => theme.white};
       }
 
-      @media (min-width: 600px) { //desktop
+      @media (min-width: 910px) { //desktop
         font-size: 2.3rem;
       }
     }
@@ -259,7 +265,7 @@ export const Text = styled.div`
   padding: 1rem;
 
   p{
-    @media (min-width: 600px) { //desktop
+    @media (min-width: 910px) { //desktop
       max-width: 50%;
     }
   }
@@ -302,7 +308,7 @@ height: auto;
   padding: 0.7rem;
   border-radius: 1.3rem;
 
-  @media (min-width: 600px) {
+  @media (min-width: 910px) {
      width: 40rem;
   }
 }

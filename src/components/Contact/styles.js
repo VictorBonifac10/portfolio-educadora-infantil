@@ -14,7 +14,7 @@ height: 100vh;
 margin-top: 4rem;
 
 //-----------------Background Image
-img{
+#person{
     position: absolute;
     object-fit: cover;
     top: 0;
@@ -55,11 +55,12 @@ section{
     font-size: 0.95rem;
     line-height: 1rem;
 
-    @media(min-width: 600px){
+    @media(min-width: 910px){
     width: 40%;
     height: 40%;
     line-height: 1.3rem;
     font-size: 1.2rem;
+    padding: 1.1rem;
     }
 }
 

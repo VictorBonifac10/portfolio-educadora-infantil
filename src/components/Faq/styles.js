@@ -9,7 +9,7 @@ justify-content: center;
 align-items: center;
 padding: 0.5rem;
 
-@media(min-width: 600px){
+@media(min-width: 910px){
     margin: 1rem;
     padding: 1rem 5rem;
 }

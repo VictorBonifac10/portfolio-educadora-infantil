@@ -138,11 +138,14 @@ export const ContainerFooter = styled.footer`
 
 //-----------------Atributtes
 export const Text = styled.div`
-    max-width: 50%;
     font-size: 0.9rem;
 
     p{
     margin-bottom: 5.5rem;
+    }
+
+    @media(min-width: 910px){
+      max-width: 50%;
     }
 
 `;

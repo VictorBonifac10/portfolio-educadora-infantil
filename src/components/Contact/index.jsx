@@ -10,6 +10,9 @@ import { Title } from '../index'
 //Icons
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
+//Data
+import { contact } from '../../data/contact'
+
 export function Contact() {
     return (
         <ContactContainer>
@@ -22,7 +25,11 @@ export function Contact() {
 
                 <p>Entre em contato pelo (16)99716-1628 ou</p>
 
-                <a href='#'><WhatsAppIcon /> clique aqui</a>
+                {contact.map((data) => (
+                    <a href={data.whatsapp} key={data.whatsapp}>
+                        <WhatsAppIcon /> clique aqui
+                    </a>
+                ))}
 
             </section>
         </ContactContainer>

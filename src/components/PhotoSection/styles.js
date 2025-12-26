@@ -13,7 +13,7 @@ margin: 3rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
     margin: 1rem;
   }
