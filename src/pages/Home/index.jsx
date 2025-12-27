@@ -64,7 +64,7 @@ export function Home() {
                             <a href={data.whatsapp} target="_blank" rel="noreferrer">
                                 <WhatsAppIcon />
                             </a>
-                            <a href={data.forms} target="_blank" rel="noreferrer">
+                            <a href={data.email} target="_blank" rel="noreferrer">
                                 <InfoIcon />
                             </a>
                         </section>

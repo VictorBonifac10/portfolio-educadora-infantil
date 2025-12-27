@@ -13,6 +13,11 @@ export const Container = styled.div`
 
   .swiper {
     width: 100%;
+    pointer-events: none;
+  }
+
+  .swiper img {
+    pointer-events: none;
   }
 
   .swiper-wrapper {

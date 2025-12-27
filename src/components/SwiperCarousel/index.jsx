@@ -26,8 +26,9 @@ export function SwiperCarousel() {
                 freeMode={true}
                 freeModeMomentum={false}
                 grabCursor={false}
-                allowTouchMove={false}   // 👈 impede clique/drag
-                simulateTouch={false}   // 👈 impede interação por mouse
+                allowTouchMove={false}   //impede clique/drag
+                simulateTouch={false}   //impede interação por mouse
+                onTouchStart={(e) => e.preventDefault()} //impede interação quando acessado por celular
             >
                 {images.map((img, index) => (
                     <SwiperSlide
