@@ -1,5 +1,5 @@
 ## 👤 Portfólio Educadora Infantil
-Desenvolviemento de uma landing page responsiva construída em React com Styled-Components e bibliotecas auxiliares, priorizando semântica, performance e arquitetura de código limpa.
+Desenvolvimento de uma landing page responsiva construída em React com Styled-Components e bibliotecas auxiliares, priorizando semântica, performance e arquitetura de código limpa.
 
 ## 💻 Demonstração
 
